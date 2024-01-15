@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/experience.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Experience</title>
+    <script src="/script/homepage.js"></script>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+
+    <main>
+      <h1 class="page-title">Experience</h1>
+
+      <section class="experience-section">
+        <div class="experience-section-container">
+          <div class="experience-company first-company">
+            <div class="flex-container first-flex-container">
+              <div class="company-image-container">
+                <img
+                  class="university-logo gbc-logo"
+                  src="/Images/Group 152.svg"
+                  alt="Showcasing all Awards"
+                />
+              </div>
+              <div class="content">
+                <p class="position-name first-company">
+                  HR & Finance Assistant (Part-time)
+                </p>
+                <p class="work-details">
+                  I oversee critical financial operations, including the
+                  management of financial statements, the maintenance of the
+                  Ontario minute book, and the organization of comprehensive
+                  financial and personnel records. This encompasses diligently
+                  managing employee information such as salaries, working hours,
+                  and other essential details to ensure accurate and efficient
+                  record-keeping.
+                </p>
+              </div>
+            </div>
+            <div class="title">
+              <p class="name-of-company">Urban Construction Limited</p>
+              <p class="location">Mississauga, ON</p>
+              <p class="duration">(Nov 2023 - current)</p>
+            </div>
+            <div class="flex-container">
+              <div class="company-image-container">
+                <img
+                  class="university-logo gbc-logo"
+                  src="/Images/afiniti.svg"
+                  alt="Showcasing all Awards"
+                />
+              </div>
+              <div class="content">
+                <p class="position-name first-company">
+                  Talent Acquisition (Intern)
+                </p>
+                <p class="work-details">
+                  Engaged in the end-to-end hiring and interview process,
+                  proficiently sourcing resumes and meticulously shortlisting
+                  candidates for technical positions. Actively collaborated with
+                  hiring managers to comprehend job contexts and establish
+                  effective communication channels with potential candidates.
+                </p>
+              </div>
+            </div>
+            <div class="title">
+              <p class="name-of-company">Afiniti</p>
+              <p class="location">Lahore, Pakistan</p>
+              <p class="duration">(Oct 2022 - May 2023)</p>
+            </div>
+            <div class="flex-container">
+              <div class="company-image-container">
+                <img
+                  class="university-logo gbc-logo"
+                  src="/Images/HK.svg"
+                  alt="Showcasing all Awards"
+                />
+              </div>
+              <div class="content">
+                <p class="position-name first-company">
+                  Front-End Developer (Intern)
+                </p>
+                <p class="work-details">
+                  Demonstrated proactive involvement in crafting the User
+                  Interface for the company's mobile application while
+                  concurrently gaining valuable insights into and applying
+                  fundamental recruitment practices. Exemplified adaptability by
+                  seamlessly transitioning between front-end development and IT
+                  recruitment responsibilities
+                </p>
+              </div>
+            </div>
+            <div class="title last-title">
+              <p class="name-of-company">HK Education International</p>
+              <p class="location">Lahore, Pakistan</p>
+              <p class="duration">(June 2021 - Nov 2021)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>
