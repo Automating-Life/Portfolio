@@ -29,6 +29,18 @@
   </head>
   <body>
     <!-- Script for fetching heading content -->
+	<script>
+      document.addEventListener("DOMContentLoaded", function () {
+        fetch("header_footer/header.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+	  src="script/homepage.js"
+    </script>
     <main>
       <section class="top-section">
         <div class="top-section-container">
