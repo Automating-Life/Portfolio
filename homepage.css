@@ -1,0 +1,344 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font sizes */
+  /* --secondaryHeader: 0.75rem;
+    --mainHeader: 1.3rem;
+    --descriptionSize: 1.06rem;
+    --authors: 0.875rem;
+    --mainnews: 1.7rem; */
+
+  /* colors */
+  /* --divider: rgb(229, 229, 229);
+    --secondary: rgb(219, 51, 52);
+    --description: #333;
+    --subscribe: #0787ca;
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0); */
+
+  /* spacing */
+  /* --paddingMedium: 8px; */
+
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+
+  /* --font-montserrat: "Montserrat", sans-serif;
+   
+    /* font weight */
+  /* --font-weight-bold: bold;
+    --font-weight-h1: 400; */
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #ebd98d;
+}
+h1 {
+  font-family: var(--heading);
+  font-size: 32px;
+}
+h2 {
+  font-size: 26px;
+  font-family: var(--heading);
+}
+
+p {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+p.content {
+  font-family: var(--heading);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.top-content-paragraph {
+  width: 63%;
+  margin-left: 2rem;
+}
+.top-section-container {
+  margin-top: 17.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 17.5rem;
+  /* margin-left: 33%; */
+}
+
+.top-section-container div img {
+  width: 100%;
+}
+
+.designer-heading h1,
+.developer-heading h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.designer-heading p,
+.developer-heading p {
+  font-size: 13px;
+  width: 30%;
+  text-align: left;
+  margin-left: 4.9rem;
+  width: 60%;
+}
+
+/* bio section styles */
+
+h1.introduction {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.bio-section h1,
+p {
+  text-align: center;
+  width: 70%;
+}
+
+.title-position {
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+}
+
+.bio-section {
+  margin-left: 22.5%;
+}
+
+.quote-header {
+  margin-top: 3rem;
+  font-size: 18px;
+}
+
+.author {
+  font-style: italic;
+}
+
+p.quote {
+  font-family: var(--heading);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 15px;
+  width: 63%;
+  margin-left: 2rem;
+}
+.header-line-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.divider-line {
+  flex: 1;
+  border: 1px solid rgba(235, 217, 141, 0.2);
+}
+
+.line1 {
+  margin-left: 5%;
+}
+
+.line2 {
+  margin-right: 5%;
+}
+.or-text1 {
+  margin: 3rem -370px;
+  font-style: italic;
+}
+
+/* educational section styles */
+
+.education-section-container {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  /* margin-top: 17.5rem; */
+}
+.first-institute {
+  margin-left: 13rem;
+}
+
+.institute-image-container {
+  background-color: white;
+  border-radius: 20px;
+  width: 230px;
+  height: 200px;
+  margin-left: 2rem;
+}
+
+p.course-name {
+  text-align: center;
+  margin-left: 2.8rem;
+}
+p.second-course {
+  margin-left: 3.2rem;
+}
+
+p.first-course {
+  margin-left: 3.3rem;
+}
+img.gbc-logo {
+  margin-top: 2rem;
+  margin-left: 0.35rem;
+  width: 95%;
+}
+
+img.apu-logo {
+  margin-top: 0.7rem;
+  margin-left: 1.05rem;
+  width: 85%;
+}
+
+#navbar-right a.active-home {
+  background-color: #ebd98d;
+  color: black;
+}
+
+.or-text2 {
+  margin: 3rem -330px;
+  font-style: italic;
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 18px;
+}
+
+li {
+  margin-left: 45.5%;
+
+  font-family: var(--heading);
+  font-weight: 300;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+span.underline {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+p.click-here {
+  text-align: center;
+  margin-top: 2rem;
+  margin-left: 11.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Responsive styles for screens below 700px */
+
+@media screen and (max-width: 700px) {
+  .top-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-section-container div img {
+    width: 80%; /* Adjust the width as needed */
+  }
+
+  .designer-heading,
+  .developer-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .designer-heading h1,
+  .developer-heading h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+  }
+
+  .designer-heading p,
+  .developer-heading p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .bio-section {
+    text-align: center;
+  }
+
+  .bio-section h1,
+  .bio-section p,
+  .title-position,
+  .quote-header,
+  .quote,
+  .quote .author {
+    width: 100%;
+  }
+
+  .header-line-container {
+    margin-top: 10px; /* Adjust the margin as needed */
+  }
+
+  .divider-line {
+    margin: 0;
+  }
+
+  .or-text1,
+  .or-text2 {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .education-section-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .educational-institute {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .institute-image-container {
+    margin-left: 0;
+  }
+
+  p.course-name {
+    margin-left: 0;
+  }
+
+  li {
+    margin-left: 0;
+  }
+
+  /* Changes for coder and developer headings */
+  .top-section-container {
+    position: relative;
+  }
+
+  .top-image {
+    order: -1; /* Move the image to the top */
+  }
+
+  .developer-heading {
+    order: 2;
+  }
+
+  .designer-heading,
+  .developer-heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .designer-heading h1,
+  .developer-heading h1 {
+    font-size: 36px; /* Adjust the font size as needed */
+  }
+
+  .designer-heading p,
+  .developer-heading p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+}

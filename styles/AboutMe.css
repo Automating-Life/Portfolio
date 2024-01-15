@@ -1,0 +1,46 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #ebd98d;
+}
+
+h1 {
+  font-family: var(--heading);
+  font-size: 30px;
+}
+
+p.about-text {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  width: 900px;
+  text-align: center;
+  margin-left: 3.3rem;
+}
+
+div.about-container {
+  background-image: url("/Images/about-me-image.svg"); /* Set the path to your background image */
+  background-size: cover; /* Adjust the background size to cover the entire body */
+  background-position: center; /* Center the background image */
+  width: 80%;
+  height: 520px;
+
+  margin: 2.5rem 0rem 3rem 7.5rem;
+}
+
+#navbar-right a.active-about {
+  background-color: #ebd98d;
+  color: black;
+}
+
+h1.page-title {
+  text-align: center;
+  margin-top: 18rem;
+}

@@ -1,0 +1,107 @@
+/* ************************ Variables declared ************************* */
+:root {
+  /* font family */
+  --heading: "Montserrat", sans-serif;
+  --description: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #ebd98d;
+}
+
+h1 {
+  font-family: var(--heading);
+  font-size: 30px;
+}
+
+#navbar-right a.active-experience {
+  background-color: #ebd98d;
+  color: black;
+}
+
+h1.page-title {
+  text-align: center;
+  margin-top: 18rem;
+}
+
+p {
+  font-family: var(--description);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* experiences section styles */
+
+/* .first-company {
+  margin-left: 10rem;
+} */
+
+.flex-container {
+  display: flex;
+}
+
+.company-image-container {
+  border-radius: 20px;
+  width: 1100px;
+  height: 200px;
+  margin-left: 2rem;
+  flex: 1;
+}
+
+img.gbc-logo {
+  margin-top: -1rem;
+  margin-left: 0.35rem;
+  width: 95%;
+}
+
+img.apu-logo {
+  margin-top: 0.7rem;
+  margin-left: 1.05rem;
+  width: 85%;
+}
+
+div.content {
+  margin-left: 4rem;
+  margin-right: 11.5rem;
+  text-align: justify;
+  flex: 2;
+}
+
+.flex-container {
+  margin-top: 4rem;
+  margin-left: 10rem;
+}
+
+.title {
+  text-align: center;
+
+  width: 220px;
+  margin-left: 13.5rem;
+  margin-top: 2.5rem;
+}
+.name-of-company {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.duration {
+  /* margin-left: 2rem; */
+  margin-top: 0;
+}
+
+.position-name {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.last-title {
+  margin-bottom: 4rem;
+}
+
+.location {
+  margin-top: 0;
+  font-style: italic;
+}

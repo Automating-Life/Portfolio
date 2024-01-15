@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/AboutMe.css" />
+    <link rel="stylesheet" href="/header_footer/footer.css" />
+    <link rel="stylesheet" href="/header_footer/header.css" />
+
+    <!-- Link to Montserrat font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link to Open Sans font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>About Me</title>
+    <script src="/script/homepage.js"></script>
+  </head>
+  <body>
+    <!-- Script for fetching heading content -->
+
+    <main>
+      <h1 class="page-title">About Me</h1>
+      <section class="about-section">
+        <!-- <img class="background-image" src="/Images/about-me-image.svg" /> -->
+        <div class="about-container">
+          <p class="about-text">
+            <br />
+            <br />
+            Hello! I'm a 23-year-old individual who finds passion and purpose in
+            various aspects of life. Currently, I'm on an exhilarating journey
+            into the world of web development with one clear goal in mind: to
+            create extraordinary digital experiences.
+
+            <br />
+            <br />
+            Professionally, I aspire to explore two realms concurrently. On one
+            hand, I'm keen on immersing myself in the world of recruitment,
+            where I can identify and nurture talent, connecting the right people
+            with the right opportunities. On the other, I'm equally enthusiastic
+            about web development, driven by the potential to craft digital
+            experiences that leave a lasting impression. But there's more to me
+            than lines of code. When I'm not immersed in the digital realm, I'm
+            making waves in the world of sports. As a professional swimmer, I've
+            proudly earned 20 medals, a testament to my dedication and
+            competitive spirit.
+
+            <br />
+            <br />
+            Moreover, my adaptability extends beyond the pool, as I proudly hold
+            gold medals in arm wrestling, badminton, and Karate! Away from the
+            hustle and bustle of daily life, I also find comfort in long drives.
+            There's a unique sense of freedom and peace that comes from hitting
+            the open road. However, my ultimate dream is to spend an entire day
+            and night on a mountain, witnessing the breathtaking transition from
+            sunrise to sunset. The complete serenity and beauty of such a moment
+            would be nothing short of magical.
+
+            <br />
+            <br />
+            However, my journey is a blend of athletic prowess, professional
+            ambition, and a deep appreciation for the natural world. Each facet
+            contributes to the story of who I am, creating a narrative that's
+            uniquely mine. Together, let's dive into a world where passion meets
+            profession, crafting digital wonders one code at a time.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Load the footer content
+        fetch("/header_footer/footer.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document
+              .querySelector("body")
+              .insertAdjacentHTML("beforeend", data);
+          });
+      });
+    </script>
+  </body>
+</html>
